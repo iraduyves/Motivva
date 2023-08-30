@@ -1,0 +1,116 @@
+.cards_list {
+    padding: 1rem;
+
+    display: -moz-box;
+    display: -webkit-box;
+    gap: 5rem;
+    overflow-x: auto;
+    
+    scroll-snap-type: x mandatory;
+
+    > * {
+        width: 70%;
+        scroll-snap-align: center;
+    }
+}
+
+.club {
+    --card-back: #22333b;
+
+    position: relative;
+    border-radius: 1rem;
+    /* contain: content; */
+    margin-block: 1rem;
+    box-shadow: 0 2px .5rem #0005;
+
+    display: grid;
+    align-items: center;
+
+    .club_down {
+        padding: 1rem;
+
+        background-color: var(--card-back);
+        display: flex;
+
+        gap: 2rem;
+   
+        max-height: 10rem;
+    }
+}
+
+.club:not(.active) {
+    contain: content;
+
+    .club_up .content > * {
+        opacity: 0;
+    }
+
+    .club_down {
+        max-height: 0;
+        padding-block: 0;
+    }
+    .join_card {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.club_up .content {
+    background-color: #0008;
+
+    border-radius: inherit;
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 1rem;
+}
+.join_card {
+    --size: .8rem;
+
+    background-color: #fff;
+    position: absolute;
+    right: 1.5rem;
+    width: max(25%, 15rem);
+    padding: var(--size);
+    border-radius: var(--size);
+    display: grid;
+    gap: var(--size);
+    
+    & img {
+        border-radius: inherit;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    
+    & button {
+        border-radius: inherit;
+        padding: calc(var(--size) / 1.5);
+        border: none;
+        color: #fff;
+        background-color: #0bf;;
+    }
+}
+
+.club_down > * {
+    text-align: center;
+
+    display: grid;
+    gap: .4rem;
+}
+
+.nestedProfiles {
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+
+    & > * {
+        margin-right: -1rem;
+        box-shadow: 0 0 .5rem #0005;
+    }
+}
+
+.profile_img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1000rem;
+}

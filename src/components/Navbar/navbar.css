@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    justify-content: space-between;
+    top: 0;
+    /* height: 10vh; */
+    width: 100%;
+    background-color: rgb(2, 31, 50);
+    display: flex;
+    position: relative;
+    padding: .5rem 2rem;
+}
+
+.navbarcontainer {
+    /* min-width: 20%; */
+    color: white;
+    display: flex;
+    align-items: center;
+    /* margin-left: 2.8%; */
+}
+
+.logoicon {
+    padding-left: 4rem;
+}
+
+.logo {
+    font-weight: 800;
+}
+
+.navitems {
+    size: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between;  */
+    /* min-width: 20%; */
+    gap: 1rem;
+    padding: 0 0 0 0;
+
+}
+
+.navicon {
+    padding: 0;
+}
+
+.navprofile {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border-color: aliceblue;
+}
+
+.navsearch {
+    width: 60%;
+    background-color: rgb(2, 31, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navsearchitem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: .3rem .4rem;
+    width: 30vw;
+    height: 100%;
+    border-radius: .6rem;
+    border: 1px solid aliceblue;
+}
+
+.navsearchitem input {
+    flex: 1;
+    height: 100%;
+    color: aliceblue;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navicon {
+    color: aliceblue;
+}
