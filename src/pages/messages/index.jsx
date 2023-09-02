@@ -10,7 +10,7 @@ export default function Messages() {
             <section>
                 <img src="" alt="" />
                 <input type="text" />
-            </section>
+            </section> 
         </div>
     )
 }
