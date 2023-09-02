@@ -3,7 +3,7 @@ import Accodions, { AccodionItem as Item } from './accodions'
 
 export default function LeftAccodions() {
     return (
-        <div>
+        <>
             <Accodions title='Activities'>
                 <Item>Activity 1</Item>
                 <Item>Activity 2</Item>
@@ -16,9 +16,24 @@ export default function LeftAccodions() {
                 <Item>Channel 1</Item>
                 <Item>Channel 1</Item>
             </Accodions>
-            <Accodions title='Challenges'></Accodions>
-            <Accodions title='Rooms'></Accodions>
-            <Accodions title='Actions'></Accodions>
-        </div>
+            <Accodions title='Challenges'>
+                <Item>Challenge 1</Item>
+                <Item>Challenge 1</Item>
+                <Item>Challenge 1</Item>
+                <Item>Challenge 1</Item>
+            </Accodions>
+            <Accodions title='Rooms'>
+                <Item>Room 1</Item>
+                <Item>Room 1</Item>
+                <Item>Room 1</Item>
+                <Item>Room 1</Item>
+            </Accodions>
+            <Accodions title='Actions'>
+                <Item>Action 1</Item>
+                <Item>Action 1</Item>
+                <Item>Action 1</Item>
+                <Item>Action 1</Item>
+            </Accodions>
+        </>
     )
 }

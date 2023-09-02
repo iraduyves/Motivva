@@ -8,7 +8,8 @@ export default function Messages() {
                 <LeftAccodions />
             </section>
             <section>
-                right
+                <img src="" alt="" />
+                <input type="text" />
             </section>
         </div>
     )
