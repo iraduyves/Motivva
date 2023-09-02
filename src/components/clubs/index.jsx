@@ -6,7 +6,7 @@ const Clubs = () => {
   const clubs = useMemo(() => Array.from(
     { length: 5},
     (_, index) => ({
-      active: index == 2,
+      active: true,
       title: "Community Club",
       content: 'Join the motivated club to improve your communication skills'
     })
@@ -16,7 +16,7 @@ const Clubs = () => {
     <section className='cards_list'>
       {
         clubs.map(one => (
-          <div>
+          <div key={one.title}>
             <Club title={one.title} content={one.content} active={one.active} />
           </div>
         ))

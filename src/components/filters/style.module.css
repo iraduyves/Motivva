@@ -1,0 +1,11 @@
+.filter {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.filter .item {
+    padding: .5rem 1.5rem;
+    background-color: var(--dark-back);
+    border-radius: 1000rem;
+}

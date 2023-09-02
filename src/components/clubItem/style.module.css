@@ -1,0 +1,53 @@
+.card {
+    --sizeX: .7rem;
+    --sizeY: .5rem;
+
+    height: 100%;
+    width: 100%;
+    border-radius: var(--sizeY);
+    background-color: var(--dark-back, #22333b);
+    padding: var(--sizeY) var(--sizeX);
+    gap: var(--sizeY);
+
+    .img {
+        width: 100%;
+        aspect-ratio: 1.2/1;
+        object-fit: cover;
+        border-radius: inherit;
+    }
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 3rem;
+    gap: var(--sizeX) var(--sizeY);
+}
+
+.info img {
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.main_info,
+.badge {
+    font-size: 1.25rem;
+}
+
+.member_info h4 {
+    color: var(--gray-color);
+}
+
+.member_info p {
+    display: flex;
+    gap: var(--sizeX);
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.member_info p svg,
+.badge svg {
+    height: 2rem;
+    width: 2rem;
+}

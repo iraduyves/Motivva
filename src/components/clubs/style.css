@@ -1,15 +1,15 @@
 .cards_list {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 
     display: -moz-box;
     display: -webkit-box;
     gap: 5rem;
-    overflow-x: auto;
+    overflow-x: hidden;
     
     scroll-snap-type: x mandatory;
 
     > * {
-        width: 70%;
+        width: 65%;
         scroll-snap-align: center;
     }
 }
@@ -20,7 +20,7 @@
     position: relative;
     border-radius: 1rem;
     /* contain: content; */
-    margin-block: 1rem;
+    margin-block: 1rem 0;
     box-shadow: 0 2px .5rem #0005;
 
     display: grid;
@@ -69,16 +69,19 @@
     background-color: #fff;
     position: absolute;
     right: 1.5rem;
+    height: 95%;
+    translate: 0 -1.5rem;
     width: max(25%, 15rem);
     padding: var(--size);
     border-radius: var(--size);
     display: grid;
+    grid-template-rows: 1fr auto;
     gap: var(--size);
     
     & img {
         border-radius: inherit;
         width: 100%;
-        aspect-ratio: 1/1;
+        height: 100%;
         object-fit: cover;
     }
     

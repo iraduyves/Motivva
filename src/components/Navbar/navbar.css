@@ -7,7 +7,7 @@
     top: 0;
     /* height: 10vh; */
     width: 100%;
-    background-color: rgb(2, 31, 50);
+    background-color: var(--dark-back);
     display: flex;
     position: relative;
     padding: .5rem 2rem;
@@ -55,7 +55,6 @@
 
 .navsearch {
     width: 60%;
-    background-color: rgb(2, 31, 50);
     display: flex;
     justify-content: center;
     align-items: center;

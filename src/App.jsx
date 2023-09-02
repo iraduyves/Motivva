@@ -5,6 +5,7 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import SideBar from "./components/sidebar";
 import Register from "./pages/sinup.jsx/Register";
+import Messages from "./pages/messages";
 
 function Layout() {
   return (
@@ -23,6 +24,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />} >
         <Route index element={<Home />} />
+        <Route path="/messages" element={<Messages />} />
         <Route path="/other" element={<>Other routes</>} />
       </Route>
       <Route path="/login" element={<>Login</>} />
