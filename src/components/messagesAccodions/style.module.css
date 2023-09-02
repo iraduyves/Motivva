@@ -19,6 +19,7 @@
         translate: calc(var(--gap) * -1);
         transform: rotateZ(-90deg);
         position: absolute;
+        transition: .3s ease;
     }
 }
 

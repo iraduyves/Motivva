@@ -1,0 +1,47 @@
+.box {
+    display: flex;
+
+    &.mine {
+        justify-content: end;
+    }
+}
+
+.message {
+    --gap: .5rem;
+    --size: 1rem;
+
+    display: grid;
+    grid-template-rows: 2.5rem auto auto;
+    gap: var(--gap);
+    max-width: 80%;
+}
+
+.message>img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message>p {
+    padding: var(--size);
+    background-color: var(--dark-back);
+    border-radius: var(--size);
+    border-top-left-radius: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    gap: var(--gap);
+
+    & > * {
+        background-color: var(--dark-back);
+        padding: .2rem .3rem;
+        border-radius: 100rem;
+    }
+}
