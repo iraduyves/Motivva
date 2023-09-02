@@ -4,7 +4,7 @@ import Club from './one'
 
 const Clubs = () => {
   const clubs = useMemo(() => Array.from(
-    { length: 5 },
+    { length: 5},
     (_, index) => ({
       active: index == 2,
       title: "Community Club",

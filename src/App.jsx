@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import { Outlet, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import SideBar from "./components/sidebar";
+import Register from "./pages/sinup.jsx/Register";
 
 function Layout() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Route path="/other" element={<>Other routes</>} />
       </Route>
       <Route path="/login" element={<>Login</>} />
-      <Route path="/signup" element={<>Login</>} />
+      <Route path="/signup" element={<Register/>} />
     </Routes>
   )
 

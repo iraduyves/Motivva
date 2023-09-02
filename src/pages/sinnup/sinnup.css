@@ -1,0 +1,78 @@
+.registerbox{
+    height: 70vh;
+    width: 60%;
+    max-height: 100vh;
+    /* max-width: 100%; */
+    margin-left: 20%;
+    margin-top: 9%;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: rgb(2, 31, 50);
+    /* align-items: center; */
+}  
+.regform{
+    width:60% ;
+    margin-left: 3rem;
+}
+.regforominput{
+     
+}
+.regheader{
+    margin-left: 12rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.sinupheader{
+    margin-bottom: 2rem;
+}
+.pic {
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+img{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container{
+   max-width: 700px;
+   width: 100%;
+   background-color: aqua;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20;
+}
+form .user-details .input-box{
+    margin-inline-end: 0 0 0 0;
+   width: calc(100% / 2- 50px); 
+}
+.user-details .input-box input{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
