@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Location } from 'react-router-dom'
 import { faBuildingCircleExclamation, faCableCar, faIdCardClip, faLocationCrosshairs, faLock, faMessage, faSearch } from '@fortawesome/free-solid-svg-icons'
 import profile from '../../assets/profile.png'
+import profileyves from '../../assets/yves.jpg'
 import SearchInput from './search'
 
 
@@ -30,7 +31,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faMessage} />
           </div>
           <div className="profile">
-            <img src={profile} alt="" className="navprofile" />
+            <img src={profileyves} alt="" className="navprofile" />
           </div>
         </div>
       </div>
