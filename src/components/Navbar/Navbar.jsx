@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbarcontainer">
           <div>
-            <span className="logo">MOTIVVA</span>
+            <span className="logo">MOTIVV</span>
           </div>
           <div className="logoicon">
             <FontAwesomeIcon icon={faBuildingCircleExclamation} />
